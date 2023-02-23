@@ -1,0 +1,991 @@
+@charset "UTF-8";
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/**
+* ***************************************
+* サイト全体に関わるCSS
+* ***************************************
+*/
+html *,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", "Noto Sans JP", "Roboto", sans-serif;
+  color: #24292e;
+}
+
+/**
+ * ***************************************
+ * ヘッダー
+ * ***************************************
+ *
+ * ヘッダーコンテナ
+ */
+.page-header {
+  border-bottom: 1px solid #d8d8d8;
+}
+
+@media (min-width: 768px) {
+  .header-container {
+    margin: 0 auto;
+    padding: 20px 10px;
+  }
+}
+/**
+ * ---------------------------------------
+ * ヘッダーモジュール
+ */
+/* ヘッダーロゴとモバイルナビボタン */
+.sitetitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 1px;
+}
+
+@media (min-width: 768px) {
+  .sitetitle {
+    display: block;
+    padding: 30px 0px;
+  }
+}
+/* ヘッダーロゴ */
+.header-logo {
+  margin: 0;
+  padding-left: 15px;
+  font-size: 0;
+  line-height: 0;
+}
+
+.header-logo img {
+  width: 130px;
+}
+
+@media (min-width: 768px) {
+  .header-logo {
+    padding: 0;
+  }
+  .header-logo img {
+    width: 180px;
+  }
+}
+/* モバイル向けボタン */
+.navbtn {
+  background-image: url(images/text-center.svg);
+  background-size: 80%;
+  margin-right: 30px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 40px;
+  height: 40px;
+}
+
+.navbtn.close {
+  background-image: url(images/x-lg.svg);
+  background-size: 80%;
+  margin-right: 30px;
+}
+
+@media (min-width: 768px) {
+  .navbtn {
+    display: none;
+  }
+}
+/* ヘッダーナビゲーション */
+.menu {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu li a {
+  display: block;
+  padding: 20px 30px;
+  border-top: 1px solid #d8d8d8;
+  background: #efefef;
+  color: #000;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  background: #b8e5ea;
+}
+
+@media (min-width: 768px) {
+  /* PC向けレイアウト */
+  .menu {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .menu li a {
+    padding: 6px 20px 2px 20px;
+    border-top: none;
+    border-bottom: 4px solid transparent;
+    background: none;
+  }
+  .menu li a:hover {
+    border-bottom: 4px solid black;
+    background: none;
+  }
+}
+/**
+ * ---------------------------------------
+ * メイン画像
+ */
+.main-visual-container {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+.main-visual-container .swiper-button-next:after, .main-visual-container .swiper-button-prev:after {
+  font-family: swiper-icons;
+  font-size: 25px;
+  text-transform: none !important;
+  letter-spacing: 0;
+  font-variant: initial;
+  line-height: 1;
+}
+
+.all-container {
+  max-width: 1000px;
+  margin: 0px auto;
+}
+
+h2 {
+  display: block;
+  margin: 180px auto;
+  font-size: 1.7rem;
+  text-align: center;
+  position: relative;
+}
+
+h2::after {
+  position: absolute;
+  border-radius: 5px;
+  bottom: -58px;
+  left: 50%;
+  content: "";
+  transform: translateX(-50%);
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: black;
+}
+
+/**
+ * ---------------------------------------
+ * 会社案内
+ */
+.company-container .company-img {
+  text-align: center;
+  width: 60%;
+}
+.company-container .company-box {
+  text-align: center;
+}
+.company-container .company-text {
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  padding: 0 20px;
+}
+.company-container .more-btn {
+  padding: 5px;
+  margin: 30px auto;
+  border: 1px solid black;
+  width: 150px;
+  border-radius: 2px;
+  text-align: center;
+}
+
+/**
+ * ---------------------------------------
+ * 事業案内
+ */
+.business-container .business-box {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.business-container .business-box .business-img {
+  padding-top: 30px;
+  width: 100%;
+}
+.business-container .business-text {
+  padding-top: 5px;
+  font-size: 1.3rem;
+}
+@media (min-width: 768px) {
+  .business-container .business-box {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .business-container .business-box .business-img {
+    padding: 20px;
+  }
+  .business-container .business-box .business-img img {
+    width: 100%;
+  }
+  .business-container .business-box .business-img .business-text {
+    font-size: 1.3rem;
+  }
+}
+
+/**
+ * ---------------------------------------
+ * 施工実績
+ */
+.works-container .works-box {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.works-container .xo-slider-template-thumbnail .swiper-container {
+  margin: 0 auto;
+  width: 80%;
+}
+.works-container .swiper-pagination {
+  display: none;
+}
+
+/**
+ * ---------------------------------------
+ * お客様の声
+ */
+.voice-container img {
+  width: 45%;
+}
+.voice-container .voice-box {
+  text-align: center;
+}
+.voice-container .voice-text {
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  padding: 20px 20px;
+}
+
+/**
+ * ---------------------------------------
+ * お問い合わせ
+ */
+.contact-container .contact-box {
+  text-align: center;
+}
+.contact-container .contact-text {
+  padding-top: 10px;
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .contact-container .contact-box {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .contact-container .contact-img {
+    padding: 20px;
+  }
+  .contact-container img {
+    width: 100%;
+  }
+}
+
+/**
+* ---------------------------------------
+* フッターー
+*/
+.page-bottom {
+  max-width: 100%;
+  margin: 10% 0px 11px 0px;
+  padding-top: 1%;
+  background-color: whitesmoke;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.banner div {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.banner a:hover {
+  opacity: 0.8;
+}
+
+.banner-img img {
+  max-width: 100%;
+  padding-inline: 180px;
+}
+
+@media (min-width: 768px) {
+  .page-bottom {
+    background-color: whitesmoke;
+    box-shadow: 0 0 0 100vmax;
+    -webkit-clip-path: inset(0 -100vmax);
+            clip-path: inset(0 -100vmax);
+  }
+  .banner {
+    flex-direction: row;
+  }
+  .banner div {
+    margin: 0 10px;
+  }
+}
+/* ボタンを横に並べる */
+.followus {
+  margin: 0 0 15px 0;
+  padding: 0;
+  font-family: "Croissant One", cursive;
+  font-weight: 400;
+  font-size: 1.875rem;
+  text-align: center;
+}
+
+.sns {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.sns div {
+  margin: 0 10px;
+}
+
+.sns div a {
+  display: block;
+  width: 70px;
+  height: 70px;
+  background: black;
+  border-radius: 50%;
+  font-size: 30px;
+  line-height: 70px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.sns div a:hover {
+  opacity: 0.8;
+}
+
+/* ページトップへ戻るボタン */
+.gotop {
+  text-align: center;
+}
+
+.gotop a {
+  display: inline-block;
+  padding: 1rem 4rem;
+  background: #000000;
+  border-radius: 20px 20px 0 0;
+  font-size: 1.25rem;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+.gotop a:hover {
+  opacity: 0.8;
+}
+
+/* フッターのナビゲーション① */
+.footer-nav1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 30px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-nav1 li {
+  margin: 0 0 2rem 0;
+  font-size: 0.875rem;
+}
+
+.footer-nav1 li a {
+  color: #d8d8d8;
+  text-decoration: none;
+}
+
+.footer-nav1 li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .footer-nav1 {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .footer-nav1 li {
+    margin: 0 1rem;
+  }
+}
+/* ナビゲーション② その他リンク */
+.footer-nav2 {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 20px 0; /* ulのデフォルト設定オフ */
+  padding: 0; /* ulのデフォルト設定オフ */
+  list-style: none; /* ulのデフォルト設定オフ */
+}
+
+.footer-nav2 li {
+  margin: 0 0.75rem 3px 0.75rem;
+  font-size: 0.75rem;
+}
+
+.footer-nav2 li a {
+  color: #d8d8d8;
+  text-decoration: none;
+}
+
+.footer-nav2 li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* コピーライト */
+.copyright {
+  font-size: 0.75rem;
+  color: #d8d8d8;
+  text-align: center;
+}
+
+/**
+ * ***************************************
+ * 下層ページ
+ * ***************************************
+ */
+/**
+* ---------------------------------------
+* 会社案内　下層ページ page-company.php
+*/
+/* table-company */
+.company-subcontainer img {
+  width: 1200px;
+}
+.company-subcontainer p {
+  padding: 20px 30px;
+  margin: 0;
+}
+
+.company-table {
+  padding: 0 50px;
+}
+.company-table dl {
+  display: block;
+  margin: 0;
+  padding: 20px 0;
+  border-top: 1px solid #d8d8d8;
+}
+@media (min-width: 768px) {
+  .company-table dl {
+    display: flex;
+    margin-left: 0;
+    text-align: left;
+    border-collapse: collapse;
+  }
+}
+.company-table dl:last-child {
+  border-bottom: 1px solid #d8d8d8;
+}
+.company-table dt {
+  margin: 0;
+  font-size: 1rem;
+  width: 300px;
+  line-height: 1.5;
+}
+.company-table dd {
+  padding: 20px 0px;
+}
+@media (min-width: 768px) {
+  .company-table dd {
+    float: left;
+    border-left: 1px solid #d8d8d8;
+    padding-left: 30px;
+    left: 0%;
+  }
+}
+
+.map {
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/**
+* ---------------------------------------
+* 事業案内　下層ページ
+*/
+.business-subcontainer h3 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.business-item2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 80px;
+}
+@media (min-width: 768px) {
+  .business-item2 {
+    flex-direction: row;
+    justify-content: left;
+    padding-bottom: 150px;
+  }
+  .business-item2 .business-img2 {
+    flex: 0 0 400px;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  .business-item2 .business-img2 {
+    width: 80%;
+    padding-left: 30px;
+  }
+}
+.business-item2 .business-text2 {
+  flex: 1 1 auto;
+  line-height: 2;
+}
+
+/**
+* ---------------------------------------
+* 施工実績　下層ページ
+*/
+.small-works .post-archive-box {
+  margin: 0 0 60px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(100px auto);
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 30px;
+}
+@media (min-width: 768px) {
+  .small-works .post-archive-box {
+    grid-template-columns: 1fr 1fr 1fr;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+}
+
+/**
+* ---------------------------------------
+* 施工実績　詳細ページ
+*/
+.works_custom-field {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.post-field p {
+  text-align: center;
+}
+
+.post-img img {
+  width: 380px;
+  height: 350px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.works-content {
+  padding: 0 50px;
+}
+.works-content dl {
+  display: flex;
+  flex: 0 0 300px;
+  margin: 0px;
+  border-top: 2.2px solid #d8d8d8;
+  border-left: 2.2px solid #d8d8d8;
+  border-right: 2.2px solid #d8d8d8;
+}
+@media (min-width: 768px) {
+  .works-content dl {
+    margin-left: 0;
+    text-align: left;
+  }
+}
+.works-content dl:last-child {
+  border-bottom: 2.2px solid #d8d8d8;
+}
+.works-content dt {
+  margin: 20px;
+  font-size: 1rem;
+  width: 50%;
+  line-height: 1.5;
+}
+.works-content dd {
+  padding: 20px;
+  margin: 0;
+  border-left: 2.2px solid #d8d8d8;
+}
+@media (min-width: 768px) {
+  .works-content dd {
+    float: left;
+    left: 0%;
+  }
+}
+
+/**
+* ---------------------------------------
+* お問い合わせ　下層ページ
+*/
+.wpcf7-form {
+  text-align: center;
+  padding: 20px;
+}
+.wpcf7-form input, .wpcf7-form select {
+  height: 40px;
+  width: 58%;
+  padding: 8px 16px;
+}
+.wpcf7-form textarea {
+  height: 200px;
+  width: 58%;
+  padding: 8px 16px;
+}
+.wpcf7-form p {
+  margin: 20px auto;
+}
+.wpcf7-form .contact-text {
+  text-align: left;
+  padding-left: 23%;
+  font-weight: bold;
+}
+.wpcf7-form .wpcf7-spinner {
+  visibility: hidden;
+  display: inline-block;
+  background-color: #23282d;
+  opacity: 0.75;
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 100%;
+  padding: 0;
+  margin: 0 -12px;
+  position: relative;
+}
+/*# sourceMappingURL=style.css.map */
